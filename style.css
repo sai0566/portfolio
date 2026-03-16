@@ -352,6 +352,10 @@ nav{
     gap:20px;
     margin-top:20px;
 }
+.about-info a{
+    text-decoration: none;
+    color: blue;
+}
 
 .about-info div{
     background:#f3f4f8;
