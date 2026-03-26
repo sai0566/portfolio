@@ -58,6 +58,15 @@ let projects = [
         tech: ['Python', 'MySQL', 'MySQLdb', 'Logging'],
         repo: 'https://github.com/sai0566/banking_application.git'
     },
+    {
+        name: 'Hospital Management System',
+        category: 'React',
+        description: 'A comprehensive Hospital Management System with full CRUD operations to manage doctors, patients, appointments, beds, and billing through an interactive dashboard. Built using React (Vite) and deployed on Vercel.',
+        image: './images/hsm1.png',
+        tech: ['HTML','CSS','JavaScript','React'],
+        repo: 'https://github.com/sai0566/Hospital_Management_system.git',
+        demo: 'https://hospital-management-system-8yen.vercel.app/'
+    },
      
 ]
 

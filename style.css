@@ -272,6 +272,7 @@ nav {
 
 .project-card {
     background: #f5f7fb;
+    max-width: 400px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
