@@ -67,6 +67,15 @@ let projects = [
         repo: 'https://github.com/sai0566/Hospital_Management_system.git',
         demo: 'https://hospital-management-system-8yen.vercel.app/'
     },
+    {
+        name: 'Weather Forecast',
+        category: 'Django',
+        description: 'Built a Weather Forecast Web Application using Django that fetches real-time weather information and displays a 5-day forecast based on user city search.',
+        image: './images/weather.png',
+        tech: ['HTML','CSS','Python','Django'],
+        repo: 'https://github.com/sai0566/weatherforecast.git',
+        demo: 'https://weatherforecast-3jrh.onrender.com/'
+    },
      
 ]
 
