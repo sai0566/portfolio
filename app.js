@@ -1,7 +1,7 @@
 history.scrollRestoration = "manual";
 
 window.onload = () => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
 };
 
 let projects = [
@@ -63,7 +63,7 @@ let projects = [
         category: 'React',
         description: 'A comprehensive Hospital Management System with full CRUD operations to manage doctors, patients, appointments, beds, and billing through an interactive dashboard. Built using React (Vite) and deployed on Vercel.',
         image: './images/hsm1.png',
-        tech: ['HTML','CSS','JavaScript','React'],
+        tech: ['HTML', 'CSS', 'JavaScript', 'React'],
         repo: 'https://github.com/sai0566/Hospital_Management_system.git',
         demo: 'https://hospital-management-system-8yen.vercel.app/'
     },
@@ -72,11 +72,55 @@ let projects = [
         category: 'Django',
         description: 'Built a Weather Forecast Web Application using Django that fetches real-time weather information and displays a 5-day forecast based on user city search.',
         image: './images/weather.png',
-        tech: ['HTML','CSS','Python','Django'],
+        tech: ['HTML', 'CSS', 'Python', 'Django'],
         repo: 'https://github.com/sai0566/weatherforecast.git',
         demo: 'https://weatherforecast-3jrh.onrender.com/'
     },
-     
+    {
+        name: 'Expense Tracker',
+        category: 'Full Stack',
+        description: 'Built a full-stack expense management application using React and Django REST Framework with JWT authentication, protected routes, and secure user-specific expense tracking.',
+
+        image: './images/expense tracker.png',
+
+        tech: [
+            'React',
+            'Django',
+            'Django REST Framework',
+            'JWT',
+            'PostgreSQL'
+        ],
+
+        frontendRepo: 'https://github.com/sai0566/expense_tracker',
+        backendRepo: 'https://github.com/sai0566/expense_tracker',
+
+        frontendDemo: 'https://expenses-frontend-ochre.vercel.app/',
+        backendDemo: 'https://expense-backend-ve9q.onrender.com/'
+    },
+    {
+    name: 'Edu Track',
+
+    category: 'Full Stack',
+
+    description:
+    'Developed a role-based academic management system with separate Admin, Teacher, and Student dashboards. Implemented modules for student management, attendance tracking, marks management, course assignments, and secure session-based authentication using Django.',
+
+    image: './images/edutrack.png',
+
+    tech: [
+        'Python',
+        'Django',
+        'HTML',
+        'CSS',
+        'SQLite',
+        'PostgreSQL'
+    ],
+
+    repo: 'https://github.com/sai0566/studenthub',
+    demo: 'https://studenthub-4fsq.onrender.com/'
+}
+
+
 ]
 
 let container = document.getElementById('projects-container')
@@ -96,9 +140,40 @@ function displayproject(projectlist) {
                 </div>
             </div>
            <div class="card-buttons">
-                ${element.demo ? `<a href="${element.demo}" target="_blank" class="demo">Live demo</a>` : ""}
-                <a href="${element.repo}" target="_blank" class="repo">Repo</a>
-            </div>
+
+    ${element.demo ? 
+        `<a href="${element.demo}" target="_blank" class="demo">Live Demo</a>` 
+        : ""
+    }
+
+    ${element.repo ? 
+        `<a href="${element.repo}" target="_blank" class="repo">Repo</a>` 
+        : ""
+    }
+
+    ${element.frontendDemo ? 
+        `<a href="${element.frontendDemo}" target="_blank" class="demo">Live Demo</a>` 
+        : ""
+    }
+
+    ${element.frontendRepo ? 
+        `<a href="${element.frontendRepo}" target="_blank" class="repo">Frontend Repo</a>` 
+        : ""
+    }
+
+    ${element.backendDemo ? 
+        `<a href="${element.backendDemo}" target="_blank" class="demo">API</a>` 
+        : ""
+    }
+
+    
+
+    ${element.backendRepo ? 
+        `<a href="${element.backendRepo}" target="_blank" class="repo">Backend Repo</a>` 
+        : ""
+    }
+
+</div>
         </div>
         `
     });

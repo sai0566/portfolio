@@ -337,9 +337,13 @@ nav {
     text-decoration: none;
 }
 
+
 .demo {
     background: #4f46e5;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .repo {
