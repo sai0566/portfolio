@@ -570,84 +570,108 @@ nav#navbar {
     50% { transform: translateY(-10px); }
 }
 
-/* SKILLS SECTION */
 .skills-grid {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 20px;
 }
 
-.skill-card {
+.tech-logo-card {
     background: var(--bg-card);
     border: 1px solid var(--border-color);
     border-radius: 16px;
-    padding: 24px;
-    box-shadow: var(--shadow-sm);
-    transition: all var(--transition-normal);
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-primary);
-    box-shadow: var(--shadow-hover);
-}
-
-.skill-head {
+    padding: 24px 16px;
     display: flex;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 16px;
-}
-
-.skill-icon-wrapper {
-    width: 44px;
-    height: 44px;
-    background: var(--accent-light);
-    border-radius: 12px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    gap: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    cursor: pointer;
 }
 
-.skill-info {
-    flex: 1;
+.tech-logo-card:hover {
+    transform: translateY(-8px) scale(1.04);
 }
 
-.skill-info h3 {
-    font-size: 1.05rem;
+.tech-logo-card i {
+    font-size: 3.2rem;
+    transition: transform var(--transition-normal);
+}
+
+.tech-logo-card:hover i {
+    transform: scale(1.15) rotate(4deg);
+}
+
+.tech-logo-card span {
+    font-size: 0.88rem;
     font-weight: 700;
     color: var(--text-title);
-    line-height: 1.2;
+    text-align: center;
+    transition: color var(--transition-fast);
 }
 
-.skill-level {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    font-weight: 500;
+/* Custom Signature Brand Colors & Glows on Hover */
+.tech-logo-card[data-brand="python"]:hover {
+    border-color: #3776ab;
+    box-shadow: 0 14px 30px rgba(55, 118, 171, 0.35);
 }
 
-.skill-percent {
-    font-family: var(--font-mono);
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--accent-primary);
+.tech-logo-card[data-brand="django"]:hover {
+    border-color: #10b981;
+    box-shadow: 0 14px 30px rgba(16, 185, 129, 0.4);
 }
 
-.skill-bar-container {
-    height: 8px;
-    background: var(--bg-alt);
-    border-radius: 10px;
-    overflow: hidden;
+.tech-logo-card[data-brand="react"]:hover {
+    border-color: #61dafb;
+    box-shadow: 0 14px 30px rgba(97, 218, 251, 0.4);
 }
 
-.skill-bar-fill {
-    height: 100%;
-    background: var(--accent-gradient);
-    border-radius: 10px;
-    transition: width 1.5s ease-out;
+.tech-logo-card[data-brand="js"]:hover {
+    border-color: #f7df1e;
+    box-shadow: 0 14px 30px rgba(247, 223, 30, 0.35);
+}
+
+.tech-logo-card[data-brand="html"]:hover {
+    border-color: #e34f26;
+    box-shadow: 0 14px 30px rgba(227, 79, 38, 0.35);
+}
+
+.tech-logo-card[data-brand="css"]:hover {
+    border-color: #1572b6;
+    box-shadow: 0 14px 30px rgba(21, 114, 182, 0.35);
+}
+
+.tech-logo-card[data-brand="mysql"]:hover {
+    border-color: #00758f;
+    box-shadow: 0 14px 30px rgba(0, 117, 143, 0.35);
+}
+
+.tech-logo-card[data-brand="postgres"]:hover {
+    border-color: #336791;
+    box-shadow: 0 14px 30px rgba(51, 103, 145, 0.35);
+}
+
+.tech-logo-card[data-brand="git"]:hover {
+    border-color: #f05032;
+    box-shadow: 0 14px 30px rgba(240, 80, 50, 0.35);
+}
+
+.tech-logo-card[data-brand="github"]:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 14px 30px rgba(139, 92, 246, 0.35);
+}
+
+.tech-logo-card[data-brand="bootstrap"]:hover {
+    border-color: #7952b3;
+    box-shadow: 0 14px 30px rgba(121, 82, 179, 0.35);
+}
+
+body.dark-mode .tech-logo-card i.devicon-github-original {
+    color: #ffffff;
 }
 
 /* PROJECTS TOOLBAR & SEARCH */
